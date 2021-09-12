@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+//gitU: { login, avatar_url, url, repos_url } está recibiendo el cada objeto del estado gitUsers y lo destructura para luego ser usado en el componente
 const UsersItem = ({ gitU: { login, avatar_url, url, repos_url } }) => {
 	return (
 		<div className="card col-2 ">

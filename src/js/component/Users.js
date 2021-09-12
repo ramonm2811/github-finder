@@ -23,6 +23,8 @@ const Users = () => {
 		<div className="row">
 			{isLoaded ? (
 				gitUsers.map(gitU => {
+					//gitU={gitU} esta enviando cada objeto del estado gitUsers a UserItems a través de un prop!!!!
+					//Luego en UsersItem se recibe como argumento, esta se debe definir su prop.type
 					return <UsersItem gitU={gitU} key={gitU.id} />;
 				})
 			) : (
